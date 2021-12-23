@@ -156,27 +156,27 @@
 
                     hospStyle.mergeConfig(hospConfig);
                    }
-                    
+                  
+                       
                    var geocoder = platform.getSearchService();
 
-                   function geocodeAndSearch(){
+                  function geocodeAndSearch(){
 
                    let geocoderParams = {
-                      q : 'papa',
-                      at : '3.43402,-76.52645'
-                     
-                   }
+                        q : 'papa',
+                        at : '3.43402,-76.52645'
+  
+                         }
 
                     function onResult(result){
-                       console.log(result);
+                     console.log(result);
 
-                       
+    
+                    }
+
+                           geocoder.autosuggest(geocoderParams,onResult,alert);
+
                       }
-
-                       geocoder.autosuggest(geocoderParams,onResult,alert);
-
-                      }
-
 
                      geocodeAndSearch();
                 
@@ -185,6 +185,7 @@
                   clickToMark();
 
                clickDragMarkers();  
+               
                
                
         </script>
